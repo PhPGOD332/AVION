@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Satoshi-Regular";
+  src: url("satoshi/Satoshi-Regular.woff2") format("woff2"), url("satoshi/Satoshi-Regular.woff") format("woff"), url("satoshi/Satoshi-Regular.ttf") format("truetype");
+  src-font-weight: 400;
+  src-font-display: swap;
+  src-font-style: normal;
+}
+@font-face {
   font-family: "Satoshi-Medium";
   src: url("satoshi/Satoshi-Medium.woff2") format("woff2"), url("satoshi/Satoshi-Medium.woff") format("woff"), url("satoshi/Satoshi-Medium.ttf") format("truetype");
   src-font-weight: 500;
@@ -6,7 +13,7 @@
   src-font-style: normal;
 }
 html, body {
-  font-family: "Satoshi-Regular", sans-serif;
+  font-family: "Satoshi-Medium", sans-serif;
 }
 html ul, html ol, body ul, body ol {
   list-style: none;
@@ -17,11 +24,74 @@ html a, body a {
   text-decoration: none;
   color: #000;
 }
+html .wrapper, body .wrapper {
+  padding: 0 28px;
+}
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.header .up-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header .up-block .nav-btn {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+.header .up-block .nav-btn:hover .nav-btn-icon path {
+  transition: 0.2s;
+  fill: #a69ed9;
+}
+.header .up-block .logo-link .logo {
+  font-weight: 400;
+  font-size: 24px;
+  color: #22202E;
+  margin: 0;
+}
+.header .up-block .logo-link:hover .logo {
+  transition: 0.2s;
+  color: #847fb9;
+}
+.header .up-block::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.header .bottom-block {
+  padding: 20px 0;
+}
+.header .bottom-block .menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .bottom-block .menu-list .menu-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.header .bottom-block .menu-list .menu-item:hover .menu-link {
+  transition: 0.2s;
+  color: #a69ed9;
+}
+.header .bottom-block .menu-list .menu-item:not(last-of-type) {
+  margin-right: 44px;
+}
+.header .bottom-block .menu-list .menu-item:not(last-of-type) .menu-link {
+  color: #726E8D;
 }
 
 /*# sourceMappingURL=style.css.map */
