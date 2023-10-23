@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("satoshi/Satoshi-Medium.woff2") format("woff2"), url("satoshi/Satoshi-Medium.woff") format("woff"), url("satoshi/Satoshi-Medium.ttf") format("truetype");
+  src-font-weight: 500;
+  src-font-display: swap;
+  src-font-style: normal;
+}
+html, body {
+  font-family: "Satoshi-Regular", sans-serif;
+}
+html ul, html ol, body ul, body ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html a, body a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
